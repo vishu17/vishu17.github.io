@@ -43,6 +43,7 @@ a:hover {
 .cta-secondary {
   background: #1F2B38;
   color: #FFF;
+  padding: 19px 66px;
 }
 
 .cta-secondary:hover {
