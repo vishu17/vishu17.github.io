@@ -5,18 +5,30 @@ body {
   text-align: center;
 }
 
+a {
+  color: #FFF;
+}
+
+a:hover {
+  border-bottom: 1px solid #FFF;
+  color: #FFF;
+}
+
 .ss-theater-spot {
   margin-bottom: 30px;
 }
 
-.ss-theater-logo {
+.ss-theater-title {
+  background: url('../img/main-sprite.png') center 1px no-repeat;
+  height: 35px;
   margin-bottom: 30px;
+  text-indent: -9999px;
 }
 
 .cta-large {
-  background: #FFFFFF;
+  background: #DA731C;
   border-radius: 5px;
-  color: #000;
+  color: #FFF;
   font-size: 24px;
   font-weight: 200;
   margin: 0 10px;
@@ -24,7 +36,8 @@ body {
 }
 
 .cta-large:hover {
-  background: #CCC;
+  background: #AD5911;
+  border: 0;
 }
 
 .cta-secondary {
@@ -34,6 +47,15 @@ body {
 
 .cta-secondary:hover {
   background: #17202A;
+  color: #FFF;
+}
+
+i.play-icon {
+  background: url('../img/main-sprite.png') 0 -51px no-repeat;
+  display: inline-block;
+  height: 16px;
+  margin-left: 7px;
+  width: 11px;
 }
 
 .desc {
@@ -51,4 +73,37 @@ body {
 
 .footer {
   margin: 90px 0 10px;
+}
+
+.reveal-modal {
+  display: none;
+  left: 50%;
+  margin-left: -426px;
+  position: fixed;
+  top: 100px !important;
+  z-index: 1005;
+}
+
+.reveal-modal-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1004;
+  display: none;
+  left: 0;
+}
+
+.close-reveal-modal {
+  top: -50px;
+  position: absolute;
+  font-size: 32px;
+  right: 0;
+}
+
+.close-reveal-modal:hover {
+  border: 0;
 }
