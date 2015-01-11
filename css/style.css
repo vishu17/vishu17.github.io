@@ -1,0 +1,54 @@
+body {
+  background-color: #2A3A4B;
+  color: #FFF;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: center;
+}
+
+.ss-theater-spot {
+  margin-bottom: 30px;
+}
+
+.ss-theater-logo {
+  margin-bottom: 30px;
+}
+
+.cta-large {
+  background: #FFFFFF;
+  border-radius: 5px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 0 10px;
+  padding: 18px 66px;
+}
+
+.cta-large:hover {
+  background: #CCC;
+}
+
+.cta-secondary {
+  background: #1F2B38;
+  color: #FFF;
+}
+
+.cta-secondary:hover {
+  background: #17202A;
+}
+
+.desc {
+  font-size: 24px;
+  font-weight: 100;
+  color: #FFFFFF;
+  line-height: 29px;
+  margin-bottom: 53px;
+  letter-spacing: 1px;
+}
+
+.cta-container {
+  margin-bottom: 40px;
+}
+
+.footer {
+  margin: 90px 0 10px;
+}
