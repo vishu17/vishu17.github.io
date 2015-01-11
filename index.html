@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SlideShare Theater for Chrome</title>
+    <link rel="chrome-webstore-item"
+    href="https://chrome.google.com/webstore/detail/fgaccaeaghfdbdllmkckjgefbgkblnjb">
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/modernizr.js"></script>
@@ -22,8 +24,8 @@
         <h2 class="desc">Enter a distraction free content viewing experience on SlideShare</h2>
 
         <div class="cta-container">
-          <a href="" class="button cta-large">Add to Chrome</a>
-          <a href="" data-reveal-id="ss-theater-demo" class="button cta-large cta-secondary">Watch Trailer<i class="play-icon"></i></a>
+          <a onclick="chrome.webstore.install()" class="button cta-large" id="install-button">Add to Chrome</a>
+          <a data-reveal-id="ss-theater-demo" class="button cta-large cta-secondary">Watch Trailer<i class="play-icon"></i></a>
         </div>
       </div>
     </div>
@@ -53,6 +55,9 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+      if (chrome.app.isInstalled) {
+        document.getElementById('install-button').style.display = 'none';
+      }
     </script>
   </body>
 </html>
